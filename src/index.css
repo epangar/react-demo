@@ -109,3 +109,19 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+.screen{
+  border:1px solid red;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+}
+
+.nav{
+  border:1px solid purple;
+  width: 20%;
+  display: flex;
+  flex-flow: column;
+
+}

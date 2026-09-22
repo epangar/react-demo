@@ -1,0 +1,28 @@
+Conceptos clave de React y TypeScript que debes interiorizar:
+Componentes funcionales: Entender cómo crear y usar componentes funcionales en React.
+Props: Comprender cómo pasar datos de un componente padre a uno hijo.
+State: Uso de useState para manejar el estado de los componentes.
+Hooks:
+useState
+useEffect
+useContext
+useReducer
+useCallback
+useMemo
+useRef
+Enrutado: Uso de React Router para la navegación entre componentes.
+Eventos: Manejo de eventos en React (por ejemplo, onClick, onChange).
+Renderizado condicional: Renderizar componentes o elementos condicionalmente.
+Listas y claves: Uso de claves para listas de elementos y cómo manejarlas.
+Context API: Uso de Context para manejo de estado global.
+TypeScript: Tipado estático para variables, props, state y funciones.
+Interfaces y tipos: Definir interfaces y tipos para objetos y props.
+Generics: Uso de genéricos en TypeScript.
+Manejo de formularios: Cómo manejar formularios en React.
+Peticiones HTTP: Realizar peticiones HTTP (fetch, axios) y manejo de respuestas.
+Ciclo de vida de componentes: Entender el ciclo de vida con hooks (montaje, actualización, desmontaje).
+Optimización de rendimiento: Uso de useMemo, useCallback y React.memo para optimizar.
+Errores y excepciones: Manejo de errores y excepciones en React.
+Patrones de diseño: Conocer patrones como contenedor-presentador, HOC (Higher-Order Components).
+Testing: Introducción a testing con Jest y React Testing Library.
+Buenas prácticas: Seguir buenas prácticas de codificación y estructura de proyectos.

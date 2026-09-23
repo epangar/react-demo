@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom"
+
 export const NavBar =()=>{
     return (
         <nav className="nav">
             Navbar
-            <li><a>Inicio</a></li>
-            <li><a>Algo</a></li>
-            <li><a>Cosa</a></li>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/usestate">UseState</Link></li>
+                <li><Link to="/useeffect">UseEffect</Link></li>
+            </ul>
         </nav>
     )
 }

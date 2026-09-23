@@ -8,6 +8,7 @@ export const NavBar =()=>{
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/usestate">UseState</Link></li>
                 <li><Link to="/useeffect">UseEffect</Link></li>
+                <li><Link to="/usereducer">UseReducer</Link></li>
             </ul>
         </nav>
     )

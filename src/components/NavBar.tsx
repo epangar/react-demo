@@ -10,6 +10,7 @@ export const NavBar =()=>{
                 <li><Link to="/useeffect">UseEffect</Link></li>
                 <li><Link to="/usereducer">UseReducer</Link></li>
                 <li><Link to="/useContext">UseContext</Link></li>
+                <li><Link to="/usecallback">UseCallback</Link></li>
             </ul>
         </nav>
     )

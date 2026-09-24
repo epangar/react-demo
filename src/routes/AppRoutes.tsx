@@ -3,6 +3,7 @@ import { UseStateComponent } from '../components/useStateComponent'
 import { Home } from '../components/Home'
 import { UseEffectComponent } from '../components/useEffectComponent'
 import { UseReducerComponent } from '../components/useReducer'
+import { UseContextComponent } from '../components/UseContextComponent'
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
       <Route path="/useeffect" element={<UseEffectComponent />} />
       <Route path="/useeffect" element={<UseEffectComponent />} />
       <Route path="/usereducer" element={<UseReducerComponent />} />
+      <Route path="/usecontext" element={<UseContextComponent />} />
     </Routes>
   )
 }

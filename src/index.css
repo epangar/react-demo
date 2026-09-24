@@ -125,3 +125,13 @@ code {
   flex-flow: column;
 
 }
+
+li {
+  float: left;
+  list-style: none;
+}
+
+.use-context-child{
+  border:1px solid purple;
+  margin: auto;
+}

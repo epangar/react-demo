@@ -121,17 +121,16 @@ code {
 .nav{
   border:1px solid purple;
   width: 20%;
+}
+
+.nav ul {
   display: flex;
-  flex-flow: column;
-
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+  padding-left: 10px;
 }
 
-li {
-  float: left;
+.nav li {
   list-style: none;
-}
-
-.use-context-child{
-  border:1px solid purple;
-  margin: auto;
 }

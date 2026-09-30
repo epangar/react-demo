@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import Clock from 'react-clock';
+import 'react-clock/dist/Clock.css';
 
-
-const Reloj: React.FC = () => {
+export const ClockComponent = () => {
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -14,10 +14,8 @@ const Reloj: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <Clock value={date} />
+    <div style={{ width: '400px', height: '400px', border:'1px solid black' }}>
+      <Clock value={date} size={100}/>
     </div>
   );
 };
-
-export default Reloj;

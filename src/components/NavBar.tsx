@@ -11,7 +11,7 @@ export const NavBar =()=>{
                 <li><Link to="/usereducer">UseReducer</Link></li>
                 <li><Link to="/useContext">UseContext</Link></li>
                 <li><Link to="/usecallback">UseCallback</Link></li>
-                <li><Link to="/usecallback">GraficoRechart</Link></li>
+                <li><Link to="/graficorechart">GraficoRechart</Link></li>
                 <li><Link to="/clock">Clock</Link></li>
                 <li><Link to="/calendar">Calendar</Link></li>
             </ul>

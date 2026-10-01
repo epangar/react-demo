@@ -1,7 +1,4 @@
 export const Condicional =()=>{
-
-
-
     return (
         <div>
             <h4>Condicional</h4>
@@ -12,9 +9,7 @@ export const Condicional =()=>{
             <p>Otros = Número</p>
             <ul>
 
-                {new Array(20).fill('').map((e,p)=>{let answer, color;
-                    
-                    
+                {new Array(20).fill('').map((e,p)=>{let answer, color;                    
                     if((p+1)%15===0){
                         answer = "FizzBuzz"
                         color = 'red'
@@ -28,8 +23,8 @@ export const Condicional =()=>{
                         answer = (p+1).toString()
                         color = 'blue'
                     }
-                    return <li key={`${p+1+e}`} style={{ color: color }}>{answer}</li>
-                })
+                        return <li key={`${p+1+e}`} style={{ color: color }}>{answer}</li>
+                    })
                 }
 
             </ul>

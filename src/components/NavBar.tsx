@@ -15,6 +15,7 @@ export const NavBar =()=>{
                 <li><Link to="/clock">Clock</Link></li>
                 <li><Link to="/calendar">Calendar</Link></li>
                 <li><Link to="/carrito">Carrito</Link></li>
+                <li><Link to="/condicional">Condicional</Link></li>
             </ul>
         </nav>
     )

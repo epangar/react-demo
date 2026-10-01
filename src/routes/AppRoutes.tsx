@@ -9,6 +9,7 @@ import {ClockComponent } from '../components/ClockComponentk'
 import { CalendarComponent } from '../components/CalendarComponent'
 import { RechartScreen } from '../components/Rechart/RechartScreen'
 import { CarritoComponent } from '../components/Carrito/CarritoComponent'
+import { Condicional } from '../components/Conditional'
 
 const AppRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const AppRoutes = () => {
       <Route path="/clock" element={<ClockComponent />} />
       <Route path="/calendar" element={<CalendarComponent />} />
       <Route path="/carrito" element={<CarritoComponent />} />
+      <Route path="/condicional" element={<Condicional />} />
     </Routes>
   )
 }

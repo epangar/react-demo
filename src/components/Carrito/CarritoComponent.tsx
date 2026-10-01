@@ -1,4 +1,6 @@
-import { useReducer } from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable no-debugger */
+import { useReducer, useState } from "react";
 import {
     flexRender,
     getCoreRowModel,
@@ -32,6 +34,7 @@ const calcularTotal = (cesta: Product[]): number => {
     );
 };
 
+
 const carritoReducer = (
     state: CarritoState,
     action: CarritoAction
@@ -53,14 +56,11 @@ const carritoReducer = (
                         }
                         : producto
                 );
+                
+                //Remove from stock
+                
             } else {
-                nuevaCesta = [
-                    ...state.cesta,
-                    {
-                        ...action.payload,
-                        cantidad: 1,
-                    },
-                ];
+                nuevaCesta = [...state.cesta, { ...action.payload, cantidad: 1 }];
             }
 
             return {
@@ -107,16 +107,37 @@ const carritoReducer = (
 };
 
 export const CarritoComponent = () => {
+
+    const [stock, setStock] = useState<Product[]>(TABLE_DATA.data);
+
     const [cestaState, setCestaState] = useReducer(
         carritoReducer,
         initialState
     );
 
     const agregarProducto = (producto: Product) => {
-        setCestaState({
+        
+         const productoStock = stock.find(
+            item => item.id === producto.id
+        );
+
+        if (!productoStock || productoStock.cantidad <= 0) {
+            return;
+        }
+    setCestaState({
             type: "AGREGAR PRODUCTO",
             payload: producto,
         });
+
+        setStock((prevStock: Product[]) => {
+                return prevStock.map(item => {
+                    if (item.id === producto.id) {
+                        return { ...item, cantidad: item.cantidad - 1 };
+                    }
+                    return item;
+                }
+            );     
+        })
     };
 
     const eliminarProducto = (producto: Product) => {
@@ -124,6 +145,17 @@ export const CarritoComponent = () => {
             type: "ELIMINAR PRODUCTO",
             payload: producto,
         });
+        console.log(producto)
+        
+        setStock((prevStock: Product[]) => {
+                return prevStock.map(item => {
+                    if (item.id === producto.id) {
+                        return { ...item, cantidad: item.cantidad + 1 };
+                    }
+                    return item;
+                }
+            );     
+        })
     };
 
     const columns: ColumnDef<Product>[] = [
@@ -145,7 +177,7 @@ export const CarritoComponent = () => {
     // eslint-disable-next-line react-hooks/incompatible-library
     const TABLE = useReactTable({
         columns,
-        data: TABLE_DATA.data,
+        data: stock,
         getCoreRowModel: getCoreRowModel(),
     });
 

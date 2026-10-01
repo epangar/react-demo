@@ -3,15 +3,15 @@ Componentes funcionales: Entender cómo crear y usar componentes funcionales en 
 Props: Comprender cómo pasar datos de un componente padre a uno hijo.
 State: Uso de useState para manejar el estado de los componentes.
 Hooks:
-useState
-useEffect
-useContext
-useReducer
-useCallback
+useState (X)
+useEffect  (X)
+useContext (X)
+useReducer (X)
+useCallback (X)
 useMemo
 useRef
-Enrutado: Uso de React Router para la navegación entre componentes.
-Eventos: Manejo de eventos en React (por ejemplo, onClick, onChange).
+Enrutado: Uso de React Router para la navegación entre componentes. (X)
+Eventos: Manejo de eventos en React (por ejemplo, onClick, onChange). (X)
 Renderizado condicional: Renderizar componentes o elementos condicionalmente.
 Listas y claves: Uso de claves para listas de elementos y cómo manejarlas.
 Context API: Uso de Context para manejo de estado global.

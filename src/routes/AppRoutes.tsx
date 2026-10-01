@@ -5,9 +5,9 @@ import { UseEffectComponent } from '../components/useEffectComponent'
 import { UseReducerComponent } from '../components/useReducer'
 import { UseContextComponent } from '../components/useContextComponent'
 import { UseCallbackComponent } from '../components/useCallbackComponent'
-import { GraficoRechart } from '../components/GraficoRechart'
 import {ClockComponent } from '../components/ClockComponentk'
 import { CalendarComponent } from '../components/CalendarComponent'
+import { RechartScreen } from '../components/Rechart/RechartScreen'
 
 const AppRoutes = () => {
   return (
@@ -19,7 +19,7 @@ const AppRoutes = () => {
       <Route path="/usereducer" element={<UseReducerComponent />} />
       <Route path="/usecontext" element={<UseContextComponent />} />
       <Route path="/usecallback" element={<UseCallbackComponent />} />
-      <Route path="/graficorechart" element={<GraficoRechart />} />
+      <Route path="/graficorechart" element={<RechartScreen />} />
       <Route path="/clock" element={<ClockComponent />} />
       <Route path="/calendar" element={<CalendarComponent />} />
     </Routes>

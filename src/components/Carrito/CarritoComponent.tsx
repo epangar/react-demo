@@ -142,6 +142,7 @@ export const CarritoComponent = () => {
         },
     ];
 
+    // eslint-disable-next-line react-hooks/incompatible-library
     const TABLE = useReactTable({
         columns,
         data: TABLE_DATA.data,

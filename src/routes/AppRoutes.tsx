@@ -8,6 +8,7 @@ import { UseCallbackComponent } from '../components/useCallbackComponent'
 import {ClockComponent } from '../components/ClockComponentk'
 import { CalendarComponent } from '../components/CalendarComponent'
 import { RechartScreen } from '../components/Rechart/RechartScreen'
+import { CarritoComponent } from '../components/Carrito/CarritoComponent'
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AppRoutes = () => {
       <Route path="/graficorechart" element={<RechartScreen />} />
       <Route path="/clock" element={<ClockComponent />} />
       <Route path="/calendar" element={<CalendarComponent />} />
+      <Route path="/carrito" element={<CarritoComponent />} />
     </Routes>
   )
 }

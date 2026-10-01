@@ -14,6 +14,7 @@ export const NavBar =()=>{
                 <li><Link to="/graficorechart">GraficoRechart</Link></li>
                 <li><Link to="/clock">Clock</Link></li>
                 <li><Link to="/calendar">Calendar</Link></li>
+                <li><Link to="/carrito">Carrito</Link></li>
             </ul>
         </nav>
     )

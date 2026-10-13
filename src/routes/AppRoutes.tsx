@@ -10,6 +10,8 @@ import { CalendarComponent } from '../components/CalendarComponent'
 import { RechartScreen } from '../components/Rechart/RechartScreen'
 import { CarritoComponent } from '../components/Carrito/CarritoComponent'
 import { Condicional } from '../components/Conditional'
+import { UseMemoComponent } from '../components/useMemoComponent'
+import { UseLocationComponent } from '../components/useLocationCOmponent'
 
 const AppRoutes = () => {
   return (
@@ -26,6 +28,8 @@ const AppRoutes = () => {
       <Route path="/calendar" element={<CalendarComponent />} />
       <Route path="/carrito" element={<CarritoComponent />} />
       <Route path="/condicional" element={<Condicional />} />
+      <Route path="/usememo" element={<UseMemoComponent />} />
+      <Route path="/uselocation" element={<UseLocationComponent />} />
     </Routes>
   )
 }

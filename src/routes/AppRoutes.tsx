@@ -11,7 +11,8 @@ import { RechartScreen } from '../components/Rechart/RechartScreen'
 import { CarritoComponent } from '../components/Carrito/CarritoComponent'
 import { Condicional } from '../components/Conditional'
 import { UseMemoComponent } from '../components/useMemoComponent'
-import { UseLocationComponent } from '../components/useLocationCOmponent'
+import { UseLocationComponent } from '../components/useLocationComponent'
+import { UseRefComponent } from '../components/useRefComponent'
 
 const AppRoutes = () => {
   return (
@@ -30,6 +31,7 @@ const AppRoutes = () => {
       <Route path="/condicional" element={<Condicional />} />
       <Route path="/usememo" element={<UseMemoComponent />} />
       <Route path="/uselocation" element={<UseLocationComponent />} />
+      <Route path="/useref" element={<UseRefComponent />} />
     </Routes>
   )
 }

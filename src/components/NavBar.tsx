@@ -18,6 +18,7 @@ export const NavBar =()=>{
                 <li><Link to="/condicional">Condicional</Link></li>
                 <li><Link to="/usememo">UseMemo</Link></li>
                 <li><Link to="/uselocation">UseLocation</Link></li>
+                <li><Link to="/useref">UseRef</Link></li>
             </ul>
         </nav>
     )

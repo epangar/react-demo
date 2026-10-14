@@ -19,6 +19,7 @@ export const NavBar =()=>{
                 <li><Link to="/usememo">UseMemo</Link></li>
                 <li><Link to="/uselocation">UseLocation</Link></li>
                 <li><Link to="/useref">UseRef</Link></li>
+                <li><Link to="/tareasredux">Redux - Tareas</Link></li>
             </ul>
         </nav>
     )

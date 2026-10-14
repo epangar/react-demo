@@ -13,6 +13,7 @@ import { Condicional } from '../components/Conditional'
 import { UseMemoComponent } from '../components/useMemoComponent'
 import { UseLocationComponent } from '../components/useLocationComponent'
 import { UseRefComponent } from '../components/useRefComponent'
+import { ListaTareasRedux } from '../components/TareasRedux/ListaTareasRedux'
 
 const AppRoutes = () => {
   return (
@@ -32,6 +33,8 @@ const AppRoutes = () => {
       <Route path="/usememo" element={<UseMemoComponent />} />
       <Route path="/uselocation" element={<UseLocationComponent />} />
       <Route path="/useref" element={<UseRefComponent />} />
+      <Route path="/useref" element={<UseRefComponent />} />
+      <Route path="/tareasredux" element={<ListaTareasRedux />} />
     </Routes>
   )
 }

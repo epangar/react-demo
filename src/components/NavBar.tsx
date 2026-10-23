@@ -20,6 +20,7 @@ export const NavBar =()=>{
                 <li><Link to="/uselocation">UseLocation</Link></li>
                 <li><Link to="/useref">UseRef</Link></li>
                 <li><Link to="/tareasredux">Redux - Tareas</Link></li>
+                <li><Link to="/rxjs-zen-quotes">RxJs Zenquotes</Link></li>
             </ul>
         </nav>
     )

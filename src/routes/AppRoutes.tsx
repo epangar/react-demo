@@ -14,6 +14,7 @@ import { UseMemoComponent } from '../components/useMemoComponent'
 import { UseLocationComponent } from '../components/useLocationComponent'
 import { UseRefComponent } from '../components/useRefComponent'
 import { ListaTareasRedux } from '../components/TareasRedux/ListaTareasRedux'
+import { RxjsZenQuotes } from '../components/RxJsZenQuotes'
 
 const AppRoutes = () => {
   return (
@@ -35,6 +36,7 @@ const AppRoutes = () => {
       <Route path="/useref" element={<UseRefComponent />} />
       <Route path="/useref" element={<UseRefComponent />} />
       <Route path="/tareasredux" element={<ListaTareasRedux />} />
+      <Route path="/rxjs-zen-quotes" element={<RxjsZenQuotes />} />
     </Routes>
   )
 }

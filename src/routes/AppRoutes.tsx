@@ -15,6 +15,7 @@ import { UseLocationComponent } from '../components/useLocationComponent'
 import { UseRefComponent } from '../components/useRefComponent'
 import { ListaTareasRedux } from '../components/TareasRedux/ListaTareasRedux'
 import { RxjsZenQuotes } from '../components/RxJsZenQuotes'
+import { FatherChildComponent } from '../components/FatherChildComponent'
 
 const AppRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const AppRoutes = () => {
       <Route path="/usereducer" element={<UseReducerComponent />} />
       <Route path="/usecontext" element={<UseContextComponent />} />
       <Route path="/usecallback" element={<UseCallbackComponent />} />
+      <Route path="/father-child" element={<FatherChildComponent />} />
       <Route path="/graficorechart" element={<RechartScreen />} />
       <Route path="/clock" element={<ClockComponent />} />
       <Route path="/calendar" element={<CalendarComponent />} />

@@ -8,15 +8,15 @@ useEffect  (X)
 useContext (X)
 useReducer (X)
 useCallback (X)
-useMemo
-useRef
+useMemo (X)
+useRef (X)
 Enrutado: Uso de React Router para la navegación entre componentes. (X)
 Eventos: Manejo de eventos en React (por ejemplo, onClick, onChange). (X)
-Renderizado condicional: Renderizar componentes o elementos condicionalmente.
+Renderizado condicional: Renderizar componentes o elementos condicionalmente. (X)
 Listas y claves: Uso de claves para listas de elementos y cómo manejarlas.
 Context API: Uso de Context para manejo de estado global.
-TypeScript: Tipado estático para variables, props, state y funciones.
-Interfaces y tipos: Definir interfaces y tipos para objetos y props.
+TypeScript: Tipado estático para variables, props, state y funciones. (X)
+Interfaces y tipos: Definir interfaces y tipos para objetos y props. (X)
 Generics: Uso de genéricos en TypeScript.
 Manejo de formularios: Cómo manejar formularios en React.
 Peticiones HTTP: Realizar peticiones HTTP (fetch, axios) y manejo de respuestas.

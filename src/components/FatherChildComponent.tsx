@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent } from "react"
+import { useCallback, useEffect, useState, type ChangeEvent } from "react"
 
 export const Father =()=>{
     const [sendToChild, setSendToChild] = useState<string>('') 
@@ -37,12 +37,18 @@ export const Child =({receiveFromFather, sendToFather}: ChildCommunication)=>{
     
     const handleChildValue = () =>{
         setChildValue(childValue + 1)
-        handleSendChildToFather(childValue)
+        
     } 
 
-    const handleSendChildToFather =(value:number)=>{
+    const handleSendChildToFather =useCallback((value:number)=>{
         sendToFather(value)
-    }
+    }, [sendToFather])
+
+    useEffect(()=>{
+        handleSendChildToFather(childValue)
+    },[childValue, handleSendChildToFather])
+
+    
     return (
         <div style={{border:'1px solid purple', maxWidth: '50%', margin:'auto'}}>
             <p>Child</p>

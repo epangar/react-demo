@@ -22,6 +22,7 @@ export const NavBar =()=>{
                 <li><Link to="/useref">UseRef</Link></li>
                 <li><Link to="/tareasredux">Redux - Tareas</Link></li>
                 <li><Link to="/chuck-norris-api">Chuck Norris Api</Link></li>
+                <li><Link to="/rick-morty-api">Rick & Morty API</Link></li>
                 <li><Link to="/rxjs-zen-quotes">RxJs Zenquotes</Link></li>
             </ul>
         </nav>

@@ -17,6 +17,7 @@ import { ListaTareasRedux } from '../components/TareasRedux/ListaTareasRedux'
 import { RxjsZenQuotes } from '../components/RxJsZenQuotes'
 import { FatherChildComponent } from '../components/FatherChildComponent'
 import { ChuckNorrisApi } from '../components/chuckNorrisAPi'
+import { RickMortyHome } from '../components/RickMortyApi/components/RickMortyHome'
 
 const AppRoutes = () => {
   return (
@@ -40,6 +41,7 @@ const AppRoutes = () => {
       <Route path="/useref" element={<UseRefComponent />} />
       <Route path="/tareasredux" element={<ListaTareasRedux />} />
       <Route path="/chuck-norris-api" element={<ChuckNorrisApi />} />
+      <Route path="/rick-morty-api" element={<RickMortyHome />} />
       <Route path="/rxjs-zen-quotes" element={<RxjsZenQuotes />} />
     </Routes>
   )
